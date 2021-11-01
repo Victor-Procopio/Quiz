@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/nattu-adnan-unsplash.jpg';
+import BGImage from './images/nattu-adnan-unsplash.gif';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #0085a3);
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
     margin: 20px;
   }

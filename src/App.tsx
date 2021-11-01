@@ -72,14 +72,14 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>CONHECIMENTOS GERAIS</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
-            Start
+            Iniciar
           </button>
         ) : null}
-        {!gameOver ? <p className='score'>Score: {score}</p> : null}
-        {loading ? <p>Loading Questions...</p> : null}
+        {!gameOver ? <p className='score'>Pontuação: {score}</p> : null}
+        {loading ? <p>Carregando Questões...</p> : null}
         {!loading && !gameOver && (
           <QuestionCard
             questionNr={number + 1}
@@ -92,7 +92,7 @@ const App: React.FC = () => {
         )}
         {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
           <button className='next' onClick={nextQuestion}>
-            Next Question
+            Próxima Questão
           </button>
         ) : null}
       </Wrapper>
